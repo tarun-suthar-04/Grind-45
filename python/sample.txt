@@ -1,0 +1,6 @@
+this is a sample file used to practice file handling
+to read the data line bye line we use readline
+
+f.read()	Reads all remaining content
+f.readline()	Reads one line
+f.readlines()	Reads all remaining lines into a list
