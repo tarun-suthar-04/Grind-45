@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <title>DJANGO</title>
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <input id="username">
+    <button id="btn">Login </button>
+</body>
+<script>
+    let nameBox=document.getElementById("username")
+    let lgnbtn=document.getElementById("btn")
+    lgnbtn.onclick=function(){
+        let name=nameBox.value
+        window.alert("hello " + name)
+    }
+</script>
+</html>
