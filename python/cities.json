@@ -1,0 +1,26 @@
+[
+   {
+      "name": "indore",
+      "population": 1000000
+   },
+   {
+      "name": "Jhalawar",
+      "population": 1000000
+   },
+   {
+      "name": "Bhopal",
+      "population": 1000000
+   },
+   {
+      "name": "Mumbai",
+      "population": 43478234897
+   },
+   {
+      "name": "Delhi",
+      "population": 10234093
+   },
+   {
+      "name": "Banglore",
+      "population": 643728972
+   }
+]
