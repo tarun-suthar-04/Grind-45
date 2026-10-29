@@ -1,70 +1,36 @@
-# Grind-45: 45 Days of Python and Development
+# Grind-45: Learning Log
 
-A hands-on learning repository for building programming fundamentals through short, practical exercises. Work is organized by topic and grows as new tools and projects are learned. The Django project is part of that learning journey.
+A date-wise record of the Python, SQL, and Django topics practiced in this repository. Each entry links the topic to the code or SQL files that demonstrate it. Commit IDs show the related work in Git history.
 
-## Learning process
+## Topics by date
 
-Use each study session to learn one focused concept, practice it in code, and record what you learned:
+| Date | Topic | What the code demonstrates | Files / commits |
+|---|---|---|---|
+| 2026-10-20 | SQL tables and sample data | Creating a small order-management schema with customers, products, orders, and order items; inserting records. | `SQL/schema.sql`, `SQL/seed.sql` · `53e67e4` |
+| 2026-10-20 | SQL `SELECT` | Reading rows from a table with a basic query. | `SQL/queries.sql` · `4491464` |
+| 2026-10-20 | Python file reading | Exploring `read()`, `readline()`, and `readlines()` with a text file. | `python/sample.txt` · `06ee5cd` |
+| 2026-10-29 | File input and output | Collecting names from input and writing/reading text files; trying file modes and measuring file content. | `python/practice.py`, `python/main.py` · `d9c9064`, `47f890e` |
+| 2026-10-29 | Reading and processing text files | Using list comprehensions to filter values; counting words; searching lines and summing valid integers while handling file errors. | `python/listcomprehension.py`, `python/count_words.py` · `a76e5af`, `ddfc312` |
+| 2026-10-29 | JSON | Loading and saving JSON data, reading a list of cities, adding an entry, and handling missing or invalid data. | `python/jsonpractice.py`, `python/cities.json`, `python/sample.json`, `python/dumpdata.json` · `31a4187`, `2b228be` |
+| 2026-10-29 | Debugging | Pausing execution with Python's `pdb` debugger. | `python/debugging.py` · `9549070` |
+| 2026-10-29 | Django project and URL routing | Setting up a Django project and `orders` app, returning a response from a view, and routing `/orders/` to it. | `DjangoLearning/manage.py`, `DjangoLearning/orders/`, `DjangoLearning/MydjangoProject/urls.py` · `88fa20a` |
 
-1. **Choose a small topic** from Python, SQL, data structures and algorithms, or Django.
-2. **Study the concept** using notes or a tutorial, then write a short summary in your own words.
-3. **Practice** with a small exercise or a feature in the Django project.
-4. **Run and review** the code; fix errors and note what caused them.
-5. **Save the work** in the matching folder and make a Git commit with a clear message.
-6. **Update the progress log** below with the date, topic, outcome, and next step.
+## Where to look
 
-Keep tasks small enough to finish in a session. Prefer understanding and explaining the code over copying a solution. Revisit unfinished topics in a later session rather than marking them complete prematurely.
-
-## Repository map
-
-| Path | Purpose |
+| Folder | Learning area |
 |---|---|
-| `python/` | Python practice programs and sample data for file handling, collections, JSON, and debugging. |
-| `SQL/` | SQL schema, seed data, and query exercises. |
-| `DSA/` | Data structures and algorithms practice. |
-| `DjangoLearning/` | Django learning project, including the `core` and `orders` apps. |
+| `python/` | Python exercises, text files, and JSON examples. |
+| `SQL/` | Database schema, sample data, and query practice. |
+| `DSA/` | Reserved for data structures and algorithms exercises. |
+| `DjangoLearning/` | Django project with `core` and `orders` apps. |
 
-## Django project quick start
+## Current Django routes
 
-The Django project lives in `DjangoLearning/`. On Windows PowerShell, from the repository root:
+- `/admin/` — Django administration.
+- `/orders/` — the orders app's current response view.
+- `/` — not configured yet, so it returns a 404.
+- `core/urls.py` defines a `hello/` route, but the core URL configuration is not currently included in the project routes.
 
-```powershell
-cd DjangoLearning
-.\.venv\Scripts\Activate.ps1
-python manage.py migrate
-python manage.py runserver
-```
+## Continue the log
 
-Open `http://127.0.0.1:8000/orders/` to see the current orders view, or `http://127.0.0.1:8000/admin/` for the Django admin. The project root (`/`) currently has no route, so it returns a 404. The `core` app has a `hello/` view, but its URL configuration is not currently included by the project URL configuration.
-
-If the virtual environment does not exist, create one and install Django 5.2:
-
-```powershell
-cd DjangoLearning
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install "Django>=5.2,<5.3"
-python manage.py migrate
-python manage.py runserver
-```
-
-After changing a model, create and apply migrations:
-
-```powershell
-python manage.py makemigrations
-python manage.py migrate
-```
-
-## Progress log
-
-Record actual study sessions as they happen; dates and topics below are examples of the intended format, not a fixed schedule.
-
-| Session | Date | Focus | Practice / outcome | Next step |
-|---|---|---|---|---|
-| Setup |  | Git and repository setup | Repository created | Continue with a focused topic |
-| 1 |  | Python, SQL, or DSA fundamentals |  |  |
-| 2 |  | Django project structure and URL routing | `core` and `orders` apps created; `/orders/` is routed | Connect or extend a view |
-
-## Git and local files
-
-Commit source code and learning notes. Keep machine-specific or generated files local: `DjangoLearning/.venv/`, `DjangoLearning/db.sqlite3`, and Python `__pycache__/` directories are ignored. Keep passwords and secret keys out of commits; use environment variables for secrets before sharing or deploying the project.
+When new work is committed, add a row with its date, the specific concept practiced, the relevant file, and commit ID. Keep the explanation focused on what the code currently shows; leave dates and topics blank until they are actually completed.
