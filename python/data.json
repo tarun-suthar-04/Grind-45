@@ -1,0 +1,212 @@
+[
+  {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "age": 24,
+      "address": {
+          "house_no": "12A",
+      "street": "Vijay Nagar",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "pincode": "452010"
+    },
+    "hobbies": ["cricket", "coding", "reading"],
+    "contact": {
+      "email": "aarav@example.com",
+      "phone": "+91-9000000001"
+    },
+    "education": {
+      "degree": "B.Tech",
+      "graduated": true
+    }
+  },
+  {
+    "id": 2,
+    "name": "Priya Patel",
+    "age": 29,
+    "address": {
+      "house_no": "45",
+      "street": "Satellite Road",
+      "city": "Ahmedabad",
+      "state": "Gujarat",
+      "pincode": "380015"
+    },
+    "hobbies": ["painting", "traveling"],
+    "contact": {
+      "email": "priya@example.com",
+      "phone": "+91-9000000002"
+    },
+    "education": {
+      "degree": "MBA",
+      "graduated": true
+    }
+  },
+  {
+    "id": 3,
+    "name": "Rohan Verma",
+    "age": 19,
+    "address": {
+      "house_no": "8",
+      "street": "Civil Lines",
+      "city": "Jaipur",
+      "state": "Rajasthan",
+      "pincode": "302006"
+    },
+    "hobbies": ["gaming", "football"],
+    "contact": {
+      "email": "rohan@example.com",
+      "phone": null
+    },
+    "education": {
+      "degree": "BCA",
+      "graduated": false
+    }
+  },
+  {
+    "id": 4,
+    "name": "Ananya Singh",
+    "age": 35,
+    "address": {
+      "house_no": "101",
+      "street": "Hazratganj",
+      "city": "Lucknow",
+      "state": "Uttar Pradesh",
+      "pincode": "226001"
+    },
+    "hobbies": ["cooking", "gardening", "yoga"],
+    "contact": {
+      "email": "ananya@example.com",
+      "phone": "+91-9000000004"
+    },
+    "education": {
+      "degree": "M.Sc",
+      "graduated": true
+    }
+  },
+  {
+    "id": 5,
+    "name": "Kabir Khan",
+    "age": 42,
+    "address": {
+      "house_no": "22B",
+      "street": "Park Street",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "pincode": "700016"
+    },
+    "hobbies": ["photography", "music"],
+    "contact": {
+      "email": "kabir@example.com",
+      "phone": "+91-9000000005"
+    },
+    "education": {
+      "degree": "B.Com",
+      "graduated": true
+    }
+  },
+  {
+    "id": 6,
+    "name": "Meera Iyer",
+    "age": 27,
+    "address": {
+      "house_no": "16",
+      "street": "Adyar",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600020"
+    },
+    "hobbies": ["classical dance", "reading"],
+    "contact": {
+      "email": "meera@example.com",
+      "phone": "+91-9000000006"
+    },
+    "education": {
+      "degree": "MCA",
+      "graduated": true
+    }
+  },
+  {
+    "id": 7,
+    "name": "Dev Malhotra",
+    "age": 31,
+    "address": {
+      "house_no": "77",
+      "street": "Sector 17",
+      "city": "Chandigarh",
+      "state": "Chandigarh",
+      "pincode": "160017"
+    },
+    "hobbies": ["cycling", "swimming", "chess"],
+    "contact": {
+      "email": "dev@example.com",
+      "phone": "+91-9000000007"
+    },
+    "education": {
+      "degree": "B.E.",
+      "graduated": true
+    }
+  },
+  {
+    "id": 8,
+    "name": "Zoya Ahmed",
+    "age": 22,
+    "address": {
+      "house_no": "9C",
+      "street": "Banjara Hills",
+      "city": "Hyderabad",
+      "state": "Telangana",
+      "pincode": "500034"
+    },
+    "hobbies": ["writing", "traveling"],
+    "contact": {
+      "email": "zoya@example.com",
+      "phone": "+91-9000000008"
+    },
+    "education": {
+      "degree": "B.Des",
+      "graduated": false
+    }
+  },
+  {
+    "id": 9,
+    "name": "Arjun Das",
+    "age": 50,
+    "address": {
+      "house_no": "33",
+      "street": "Salt Lake",
+      "city": "Kolkata",
+      "state": "West Bengal",
+      "pincode": "700091"
+    },
+    "hobbies": ["fishing", "gardening"],
+    "contact": {
+      "email": "arjun@example.com",
+      "phone": "+91-9000000009"
+    },
+    "education": {
+      "degree": "Ph.D.",
+      "graduated": true
+    }
+  },
+  {
+    "id": 10,
+    "name": "Sana Joshi",
+    "age": 26,
+    "address": {
+      "house_no": "5",
+      "street": "Kothrud",
+      "city": "Pune",
+      "state": "Maharashtra",
+      "pincode": "411038"
+    },
+    "hobbies": ["badminton", "coding"],
+    "contact": {
+      "email": "sana@example.com",
+      "phone": "+91-9000000010"
+    },
+    "education": {
+      "degree": "M.Tech",
+      "graduated": true
+    }
+  }
+]

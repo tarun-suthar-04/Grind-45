@@ -1,0 +1,21 @@
+{
+      "id": 1,
+      "name": "Aarav Sharma",
+      "age": 24,
+      "address": {
+          "house_no": "12A",
+      "street": "Vijay Nagar",
+      "city": "Indore",
+      "state": "Madhya Pradesh",
+      "pincode": "452010"
+    },
+    "hobbies": ["cricket", "coding", "reading"],
+    "contact": {
+      "email": "aarav@example.com",
+      "phone": "+91-9000000001"
+    },
+    "education": {
+      "degree": "B.Tech",
+      "graduated": true
+    }
+  }
