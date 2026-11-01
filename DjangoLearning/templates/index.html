@@ -9,12 +9,14 @@
 </style>
 </head>
 <body>
-   <h1>HELLO WORLD</h1>
-   <li>Football</li>
-   <li>Cricket</li>
-   <li>Basketball</li>
-   <li>Baseball</li>
-   <li>Hockey</li>
+    <ul>
+        {%for mentor in mentors%}
+        <li>{{mentor}}</li>
+        {% endfor %}
+    </ul>
+    
+    <span>Developed By : {{developer}}</span>
+        
 </body>
 
 </html>
