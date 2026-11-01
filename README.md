@@ -31,6 +31,8 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 - `/` — not configured yet, so it returns a 404.
 - `core/urls.py` defines a `hello/` route, but the core URL configuration is not currently included in the project routes.
 
+[![Architecture diagram of tarun-suthar-04/grind-45](https://gitdiagram.com/tarun-suthar-04/grind-45/diagram.png)](https://gitdiagram.com/tarun-suthar-04/grind-45?utm_source=readme&utm_medium=picture)
+
 ## Continue the log
 
 When new work is committed, add a row with its date, the specific concept practiced, the relevant file, and commit ID. Keep the explanation focused on what the code currently shows; leave dates and topics blank until they are actually completed.
