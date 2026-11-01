@@ -14,6 +14,7 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 | 2026-10-29 | JSON | Loading and saving JSON data, reading a list of cities, adding an entry, and handling missing or invalid data. | `python/jsonpractice.py`, `python/cities.json`, `python/sample.json`, `python/dumpdata.json` · `31a4187`, `2b228be` |
 | 2026-10-29 | Debugging | Pausing execution with Python's `pdb` debugger. | `python/debugging.py` · `9549070` |
 | 2026-10-29 | Django project and URL routing | Setting up a Django project and `orders` app, returning a response from a view, and routing `/orders/` to it. | `DjangoLearning/manage.py`, `DjangoLearning/orders/`, `DjangoLearning/MydjangoProject/urls.py` · `88fa20a` |
+| 2026-11-01 | Django templates and view context | Passing a developer name and a list from a view to an HTML template, then rendering the list with a template loop. | `DjangoLearning/orders/views.py`, `DjangoLearning/templates/index.html` · `0380b8c` |
 
 ## Where to look
 
@@ -27,7 +28,7 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 ## Current Django routes
 
 - `/admin/` — Django administration.
-- `/orders/` — the orders app's current response view.
+- `/orders/` — renders `index.html` with developer and mentor data supplied by the view.
 - `/` — not configured yet, so it returns a 404.
 - `core/urls.py` defines a `hello/` route, but the core URL configuration is not currently included in the project routes.
 
