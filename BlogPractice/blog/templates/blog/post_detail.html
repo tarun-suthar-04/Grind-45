@@ -1,0 +1,15 @@
+<html lang="en">
+  <head>
+    <title>{{post.title}}</title>
+  </head>
+  <body>
+    <div>
+      <p><a href="{% url 'post_list' %}">&larr; Back to Home</a></p>
+      {%if post.published_at %}
+      <time>published : {{post.published_at}}</time>
+      {% endif %}
+      <h1>{{post.title}}</h1>
+      <p>{{post.text|linebreaksbr}}</p>
+    </div>
+  </body>
+</html>
