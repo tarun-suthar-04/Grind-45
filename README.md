@@ -38,6 +38,7 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 
 - `/` — routes to the blog app's `post_list` view, which renders `blog/post_list.html`.
 
+
 [![Architecture diagram of tarun-suthar-04/grind-45](https://gitdiagram.com/tarun-suthar-04/grind-45/diagram.png)](https://gitdiagram.com/tarun-suthar-04/grind-45?utm_source=readme&utm_medium=picture)
 
 ## Continue the log
