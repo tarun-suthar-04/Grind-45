@@ -1,25 +1,13 @@
-{% load static %}
-<!doctype html>
-<html>
-  <head>
-    <title>Tarun Blogs</title>
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-  </head>
-  <body>
-    <header>
-      <a href="{% url 'post_new' %}">Add new Post</a>
-      <h1><a href="">Django Blog Practice</a></h1>
-    </header>
+{% extends 'blog/base.html' %}
 
-    <main>
-        {% for post in posts %}
-        <article>
-            <time>published : {{post.published_at}} </time>
-            <!-- <h2><a href="">{{post.title}}</a></h2> -->
-             <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
-            <p>{{post.text|linebreaksbr}}</p>
+{% block content %}
+    {% for post in posts %}
+        <article class="post">
+            <div class="date">
+                <time>published: {{ post.published_at }}</time>
+            </div>
+            <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </article>
-        {% endfor %}
-    </main>
-  </body>
-</html>
+    {% endfor %}
+{% endblock %}
