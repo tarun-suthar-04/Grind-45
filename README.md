@@ -20,7 +20,9 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 | 2026-11-09 | Django ORM querying and post detail view | Querying published posts from the database using timezone filters and adding a post detail view with `get_object_or_404` and dynamic URL routing. | `BlogPractice/blog/views.py`, `BlogPractice/blog/urls.py`, `BlogPractice/blog/templates/blog/post_detail.html`, `BlogPractice/blog/templates/blog/post_list.html` · `deef73c` |
 | 2026-11-09 | Django ModelForm and post creation | Creating `PostForm` using `forms.ModelForm`, handling form submission and validation in `post_new` view, and redirecting to the detail view. | `BlogPractice/blog/forms.py`, `BlogPractice/blog/views.py`, `BlogPractice/blog/urls.py`, `BlogPractice/blog/templates/blog/post_edit.html` · `c1bff21` |
 | 2026-11-17 | Django post edit view | Reusing `PostForm` with an instance to edit existing posts via `post_edit` view, and adding an edit button to the detail page. | `BlogPractice/blog/views.py`, `BlogPractice/blog/urls.py`, `BlogPractice/blog/templates/blog/post_detail.html` · `d2d214b` |
-| 2026-11-17 | Static files and CSS styling | Adding a custom stylesheet for headers, post layouts, and action buttons, loaded via `{% load static %}` in templates. | `BlogPractice/blog/static/css/blog.css`, `BlogPractice/blog/templates/blog/post_list.html`, `BlogPractice/blog/templates/blog/post_detail.html` · `be3d534` |
+| 2026-11-17 | Static files and CSS styling | Adding a custom stylesheet for headers, post layouts, and action buttons, loaded via `{% load static %}` in templates. | `BlogPractice/blog/static/css/blog.css`, `BlogPractice/blog/templates/blog/post_list.html`, `BlogPractice/blog/templates/blog/post_detail.html` · `be3d534`, `a5fe458`, `b0c1593` |
+| 2026-11-25 | Template inheritance and Materialize UI | Adding `base.html` template inheritance with Materialize CSS/JS and custom `blog.css`, refactoring post list, detail, and edit templates, and standardizing `.post` card layout. | `BlogPractice/blog/templates/blog/base.html`, `BlogPractice/blog/templates/blog/post_list.html`, `BlogPractice/blog/templates/blog/post_detail.html`, `BlogPractice/blog/templates/blog/post_edit.html`, `BlogPractice/blog/static/css/materialize.min.css` · `ed9facf` |
+| 2026-11-26 | View authentication and access control | Protecting `post_new` and `post_edit` views with `@login_required`, configuring `LOGIN_URL`, and conditionally showing action buttons for authenticated users. | `BlogPractice/blog/views.py`, `BlogPractice/config/settings.py`, `BlogPractice/blog/templates/blog/base.html`, `BlogPractice/blog/templates/blog/post_detail.html` · `b916ae8` |
 
 ## Where to look
 
@@ -30,7 +32,7 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 | `SQL/` | Database schema, sample data, and query practice. |
 | `DSA/` | Reserved for data structures and algorithms exercises. |
 | `DjangoLearning/` | Django project with `core` and `orders` apps. |
-| `BlogPractice/` | Django blog project with a `blog` app, models, admin, ModelForm, CRUD views, templates, and static CSS styling. |
+| `BlogPractice/` | Django blog project with a `blog` app, models, admin, ModelForm, CRUD views, template inheritance (`base.html`), authentication (`@login_required`), Materialize CSS, and custom styling. |
 
 ## DjangoLearning routes
 
@@ -43,8 +45,8 @@ A date-wise record of the Python, SQL, and Django topics practiced in this repos
 
 - `/` — routes to the blog app's `post_list` view, which queries published posts from the database and renders `blog/post_list.html`.
 - `/post/<int:pk>/` — routes to `post_detail` view, retrieving a single post by primary key (`get_object_or_404`) and rendering `blog/post_detail.html`.
-- `/post/new/` — routes to `post_new` view, displaying and processing `PostForm` to create and publish a new post.
-- `/post/<int:pk>/edit/` — routes to `post_edit` view, pre-populating `PostForm` with an existing post to allow editing and updating.
+- `/post/new/` — routes to `post_new` view (protected by `@login_required`), displaying and processing `PostForm` to create and publish a new post.
+- `/post/<int:pk>/edit/` — routes to `post_edit` view (protected by `@login_required`), pre-populating `PostForm` with an existing post to allow editing and updating.
 
 
 [![Architecture diagram of tarun-suthar-04/grind-45](https://gitdiagram.com/tarun-suthar-04/grind-45/diagram.png)](https://gitdiagram.com/tarun-suthar-04/grind-45?utm_source=readme&utm_medium=picture)
